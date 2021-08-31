@@ -16,7 +16,7 @@ const BROKER_FIELDS = [
     EMAIL_FIELD
 ];
 
-export default class xrokerCard extends NavigationMixin(LightningElement) {
+export default class BrokerCard extends NavigationMixin(LightningElement) {
     @api recordId;
 
     brokerFields = BROKER_FIELDS;
