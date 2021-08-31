@@ -16,7 +16,7 @@ const BROKER_FIELDS = [
     EMAIL_FIELD
 ];
 
-export default class BrokerCard extends NavigationMixin(LightningElement) {
+export default class xrokerCard extends NavigationMixin(LightningElement) {
     @api recordId;
 
     brokerFields = BROKER_FIELDS;
@@ -27,6 +27,7 @@ export default class BrokerCard extends NavigationMixin(LightningElement) {
     get brokerId() {
         return getFieldValue(this.property.data, BROKER_FIELD);
     }
+    /*eslint no-debugger: "error"*/
 
     handleNavigateToRecord() {
         this[NavigationMixin.Navigate]({
