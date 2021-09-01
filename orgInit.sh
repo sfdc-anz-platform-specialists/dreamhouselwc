@@ -4,7 +4,7 @@
 sfdx force:org:delete -u dreamhouse
 
 #2. create scratch org
-sfdx shane:org:create --userprefix dhuser -o my.demo -s -d 30 -a dreamforce
+sfdx shane:org:create --userprefix dhuser -o my.demo -s -d 30 -a dreamhouse
 
 #... and set the password
 sfdx shane:user:password:set -p sfdx1234 -g User -l User
