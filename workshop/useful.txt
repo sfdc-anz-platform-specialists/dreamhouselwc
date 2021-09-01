@@ -2,7 +2,7 @@
 sfdx force:limits:api:display -u dreamhouse
 
 #limits with Unix pipe
-sfdx force:limits:api:display -u dreamhouse | grep api
+sfdx force:limits:api:display -u dreamhouse | grep Api
 
 #export
 sfdx force:data:tree:export -q "select id,name,(select name,address__c from Properties__r) from Broker__c"
