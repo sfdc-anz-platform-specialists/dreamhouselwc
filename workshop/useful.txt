@@ -49,3 +49,13 @@ sfdx force:schema:sobject:list | grep Event
 sfdx force:schema:sobject:list -u dreamhouse | grep Event | sort -r
 sfdx force:schema:sobject:list -u mburnside@cta5.demo -c custom | sort -r
 
+#install shane plugin
+sfdx plugins:install shane-sfdx-plugins
+
+#create an org with 30 day duration and a custom username of demo[n]@my.demo
+sfdx shane:org:create --userprefix dfuser -o my.demo -d 30 -a dreamforce
+
+#set the password for the user to "sfdx1234"
+sfdx shane:user:password:set -p sfdx1234 -g User -l User
+
+
