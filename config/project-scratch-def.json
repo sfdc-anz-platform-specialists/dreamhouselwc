@@ -5,7 +5,8 @@
         "Walkthroughs",
         "EnableSetPasswordInApi",
         "EventLogFile",
-        "SecurityEventEnabled"
+        "SecurityEventEnabled",
+        "FieldAuditTrail"
     ],
     "settings": {
         "lightningExperienceSettings": {
