@@ -1,6 +1,6 @@
 {
     "orgName": "Dreamhouse",
-    "edition": "Developer",
+    "edition": "Enterprise",
     "features": [
         "Walkthroughs",
         "EnableSetPasswordInApi",
