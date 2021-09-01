@@ -1,0 +1,61 @@
+#verbose org details
+sfdx force:org:list --verbose
+
+#org details
+
+sfdx force:org:display -u [username or alias]
+#examples
+sfdx force:org:display
+sfdx force:org:display -u dreamhouse
+sfdx force:org:display -u mburnside@cta5.demo
+
+#limits
+
+sfdx force:limits:api:display -u [username or alias]
+#examples
+sfdx force:limits:api:display
+sfdx force:limits:api:display -u dreamhouse
+sfdx force:limits:api:display -u mburnside@cta5.demo
+
+#... and with Unix pipe
+sfdx force:limits:api:display | grep Api
+sfdx force:limits:api:display -u dreamhouse | grep Api
+sfdx force:limits:api:display -u mburnside@cta5.demo | grep Api
+
+#export
+
+sfdx force:data:tree:export -q "select id,name,(select name,address__c from Properties__r) from Broker__c"
+
+#user display
+
+sfdx force:user:display -u [username or alias]
+examples
+sfdx force:user:display
+sfdx force:user:display -u dreamhouse
+sfdx force:user:display -u mburnside@cta5.demo
+
+#Schema objects
+sfdx force:schema:sobject:list -u [username or alias] 
+examples
+sfdx force:schema:sobject:list
+sfdx force:schema:sobject:list -u dreamhouse
+
+# custom objects only
+sfdx force:schema:sobject:list -c custom
+sfdx force:schema:sobject:list -u dreamhouse  -c custom
+
+# with pipe
+sfdx force:schema:sobject:list | grep Event
+sfdx force:schema:sobject:list -u dreamhouse | grep Event | sort -r
+sfdx force:schema:sobject:list -u mburnside@cta5.demo -c custom | sort -r
+
+#install shane plugin
+sfdx plugins:install shane-sfdx-plugins
+
+#create an org with 30 day duration and a custom username of demo[n]@my.demo
+sfdx shane:org:create --userprefix dfuser -o my.demo -s -d 30 -a dreamhouse
+
+#set the password for the user to "sfdx1234"
+sfdx shane:user:password:set -p sfdx1234 -g User -l User
+
+

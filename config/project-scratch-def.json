@@ -1,7 +1,13 @@
 {
     "orgName": "Dreamhouse",
-    "edition": "Developer",
-    "features": ["Walkthroughs", "EnableSetPasswordInApi"],
+    "edition": "Enterprise",
+    "features": [
+        "Walkthroughs",
+        "EnableSetPasswordInApi",
+        "EventLogFile",
+        "SecurityEventEnabled",
+        "FieldAuditTrail"
+    ],
     "settings": {
         "lightningExperienceSettings": {
             "enableS1DesktopEnabled": true

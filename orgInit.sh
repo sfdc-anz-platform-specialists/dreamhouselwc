@@ -4,7 +4,10 @@
 sfdx force:org:delete -u dreamhouse
 
 #2. create scratch org
-sfdx force:org:create -s -f config/project-scratch-def.json -a dreamhouse
+sfdx shane:org:create --userprefix dhuser -o my.demo -s -d 30 -a dreamhouse
+
+#... and set the password
+sfdx shane:user:password:set -p sfdx1234 -g User -l User
 
 #3. push the source
 sfdx force:source:push
