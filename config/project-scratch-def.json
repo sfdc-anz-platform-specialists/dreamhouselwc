@@ -6,7 +6,10 @@
         "EnableSetPasswordInApi",
         "EventLogFile",
         "SecurityEventEnabled",
-        "FieldAuditTrail"
+        "FieldAuditTrail",
+        "DurableClassicStreamingAPI",
+        "DurableGenericStreamingAPI",
+        "ChangeDataCapture"
     ],
     "settings": {
         "lightningExperienceSettings": {
