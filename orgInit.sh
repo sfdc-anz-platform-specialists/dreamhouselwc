@@ -19,11 +19,13 @@ sfdx force:user:permset:assign -n Walkthroughs
 #5. import the data
 sfdx force:data:tree:import -p data/sample-data-plan.json
 
-#6. 
-#install streaming monitor
+#6. install streaming monitor
 sfdx force:package:install -w 20 -r -p 04t1t000003DLAQAA4
 
-#7. open the org
+#7. install streaming channels and push topics
+sfdx force:apex:execute -f ./apex/setup.apex
+
+#8. open the org
 sfdx force:org:open
 
 
