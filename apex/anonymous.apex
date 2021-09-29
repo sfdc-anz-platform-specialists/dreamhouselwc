@@ -1,0 +1,1 @@
+delete [select id from property__c where name ='Test Property'];

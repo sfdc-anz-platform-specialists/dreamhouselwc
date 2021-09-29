@@ -23,3 +23,4 @@ pushTopic.NotifyForOperationUndelete = true;
 pushTopic.NotifyForOperationDelete = true;
 pushTopic.NotifyForFields = 'Referenced';
 insert pushTopic;
+
