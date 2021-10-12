@@ -25,6 +25,9 @@ sfdx force:package:install -w 20 -r -p 04t1t000003DLAQAA4
 #7. install streaming channels and push topics
 sfdx force:apex:execute -f ./apex/setup.apex
 
+sfdx force:user:create --setalias qa-user --definitionfile config/user-def.json
+sfdx shane:user:password:set -p sfdx1234 -g QA -l Tester
+
 #8. open the org
 sfdx force:org:open
 

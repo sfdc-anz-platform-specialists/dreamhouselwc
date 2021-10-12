@@ -1,0 +1,14 @@
+{
+    "Username": "dhtester@my.demo",
+    "LastName": "Tester",
+    "FirstName": "QA",
+    "Email": "mburnside@salesforce.com",
+    "Alias": "tester1",
+    "TimeZoneSidKey": "America/Denver",
+    "LocaleSidKey": "en_US",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_US",
+    "profileName": "System Administrator",
+    "permsets": ["dreamhouse"],
+    "generatePassword": true
+}
