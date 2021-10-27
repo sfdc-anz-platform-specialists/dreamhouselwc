@@ -14,7 +14,7 @@ sfdx force:source:push
 
 #4. assign permsets
 sfdx force:user:permset:assign -n dreamhouse
-sfdx force:user:permset:assign -n Walkthroughs
+#sfdx force:user:permset:assign -n Walkthroughs
 
 #5. import the data
 sfdx force:data:tree:import -p data/sample-data-plan.json
@@ -26,8 +26,8 @@ sfdx force:package:install -w 20 -r -p 04t1t000003DLAQAA4
 #7. install streaming channels and push topics
 sfdx force:apex:execute -f ./apex/setup.apex
 
-sfdx force:user:create --setalias qa-user --definitionfile config/user-def.json
-sfdx shane:user:password:set -p sfdx1234 -g QA -l Tester
+//sfdx force:user:create --setalias qa-user --definitionfile config/user-def.json
+//sfdx shane:user:password:set -p sfdx1234 -g QA -l Tester
 
 #8. open the org
 sfdx force:org:open
