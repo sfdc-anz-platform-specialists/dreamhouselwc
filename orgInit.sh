@@ -20,7 +20,6 @@ sfdx force:user:permset:assign -n dreamhouse
 sfdx force:data:tree:import -p data/sample-data-plan.json
 
 #6. install stre
-aming monitor
 sfdx force:package:install -w 20 -r -p 04t1t000003DLAQAA4
 
 #7. install streaming channels and push topics
@@ -32,7 +31,7 @@ sfdx force:apex:execute -f ./apex/setup.apex
 #8. open the org
 sfdx force:org:open
 
-
+# all done
 
 
 
