@@ -13,8 +13,6 @@ on:
 
 # Jobs to be executed
 jobs:
-    
-    jobs:
     formatting-and-linting:
         runs-on: ubuntu-latest
         steps:
