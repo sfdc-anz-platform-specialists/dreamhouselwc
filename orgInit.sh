@@ -31,7 +31,7 @@ sfdx force:apex:execute -f ./apex/setup.apex
 #8. open the org
 sfdx force:org:open
 
-# all done should be working now and I think codecov msy work
+# all done should be working now and I think codecov may work
 
 
 
