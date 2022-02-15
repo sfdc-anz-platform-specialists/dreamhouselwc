@@ -31,7 +31,7 @@ sfdx force:apex:execute -f ./apex/setup.apex
 #8. open the org
 sfdx force:org:open
 
-# all done
+# all done should be working now
 
 
 
