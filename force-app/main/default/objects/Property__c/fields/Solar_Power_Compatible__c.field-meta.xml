@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Solar_Power_Compatible__c</fullName>
     <businessStatus>Active</businessStatus>
     <defaultValue>false</defaultValue>
-    <description>Indicator of whether the property has solar power compatibility.</description>
+    <description
+    >Indicator of whether the property has solar power compatibility.</description>
     <externalId>false</externalId>
     <label>Solar Power Compatible</label>
     <securityClassification>Public</securityClassification>
