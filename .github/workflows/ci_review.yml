@@ -70,7 +70,7 @@ jobs:
                       echo "Missing DEVHUB_SFDX_URL secret. Is this workflow running on a fork?";
                       exit 1;
                   fi
-                  
+
             # Store secret for review sandbox
             - name: 'Populate auth file with DEVHUB_SANDBOX_REVIEW_URL secret'
               shell: bash
@@ -81,11 +81,11 @@ jobs:
                       echo "Missing DEVHUB_SANDBOX_REVIEW_URL secret. Is this workflow running on a fork?";
                       exit 1;
                   fi
-            
+
             # Authenticate dev hub
             - name: 'Authenticate Dev Hub'
               run: sfdx auth:sfdxurl:store -f ./DEVHUB_SFDX_URL.txt -a devhub -d
-              
+
             # Authenticate sandbox review
             - name: 'Authenticate Sandbox review'
               run: sfdx auth:sfdxurl:store -f ./DEVHUB_SANDBOX_REVIEW_URL.txt -s MBDEVOPSRV
