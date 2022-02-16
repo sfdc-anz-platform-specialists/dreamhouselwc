@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+    <testsuite
+        name="force.apex"
+        timestamp="2022-02-16T02:53:22.000Z"
+        hostname="https://mbdevops2022--mbdevopsst.my.salesforce.com"
+        tests="3"
+        failures="0"
+        errors="0"
+        time="0.06"
+    >
+        <properties>
+            <property name="outcome" value="Successful" />
+            <property name="testsRan" value="3" />
+            <property name="passing" value="3" />
+            <property name="failing" value="0" />
+            <property name="skipped" value="0" />
+            <property name="passRate" value="100%" />
+            <property name="failRate" value="0%" />
+            <property name="testStartTime" value="Wed Feb 16 2022 13:53:22" />
+            <property name="testExecutionTime" value="0.06 s" />
+            <property name="testTotalTime" value="0.06 s" />
+            <property name="commandTime" value="0.51 s" />
+            <property
+                name="hostname"
+                value="https://mbdevops2022--mbdevopsst.my.salesforce.com"
+            />
+            <property name="orgId" value="00D9D0000001VS5UAM" />
+            <property
+                name="username"
+                value="mburnside@mbdevops2022.demo.mbdevopsst"
+            />
+            <property name="testRunId" value="7079D00000c8EKU" />
+            <property name="userId" value="0055j000004igaJAAQ" />
+            <property name="coveredLines" value="36" />
+            <property name="testRunCoverage" value="100%" />
+            <property name="orgWideCoverage" value="5%" />
+        </properties>
+        <testcase
+            name="blankAddress"
+            classname="GeocodingServiceTest"
+            time="0.04"
+        >
+        </testcase>
+        <testcase
+            name="errorResponse"
+            classname="GeocodingServiceTest"
+            time="0.02"
+        >
+        </testcase>
+        <testcase
+            name="successResponse"
+            classname="GeocodingServiceTest"
+            time="0.01"
+        >
+        </testcase>
+    </testsuite>
+</testsuites>
