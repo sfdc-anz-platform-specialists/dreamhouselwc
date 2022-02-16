@@ -1,0 +1,27 @@
+=== Test Summary
+NAME                 VALUE                                 
+───────────────────  ──────────────────────────────────────
+Outcome              Passed                                
+Tests Ran            3                                     
+Pass Rate            100%                                  
+Fail Rate            0%                                    
+Skip Rate            0%                                    
+Test Run Id          7079D00000c8DSU                       
+Test Execution Time  66 ms                                 
+Org Id               00D9D0000001VS5UAM                    
+Username             mburnside@mbdevops2022.demo.mbdevopsst
+Org Wide Coverage    5%                                    
+
+
+=== Test Results
+TEST NAME                             OUTCOME  MESSAGE  RUNTIME (MS)
+────────────────────────────────────  ───────  ───────  ────────────
+GeocodingServiceTest.blankAddress     Pass              38          
+GeocodingServiceTest.errorResponse    Pass              20          
+GeocodingServiceTest.successResponse  Pass              8           
+
+
+=== Apex Code Coverage by Class
+CLASSES           PERCENT  UNCOVERED LINES
+────────────────  ───────  ───────────────
+GeocodingService  100%                    
