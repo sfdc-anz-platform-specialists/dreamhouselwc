@@ -88,11 +88,11 @@ jobs:
 
             # Authenticate sandbox review
             - name: 'Authenticate Sandbox review'
-              run: sfdx auth:sfdxurl:store -f ./DEVHUB_SANDBOX_REVIEW_URL.txt -s MBDEVOPSRV
+              run: sfdx auth:sfdxurl:store -f ./DEVHUB_SANDBOX_REVIEW_URL.txt -a MBDEVOPSRV -s
 
             # Create scratch org
             - name: 'Deploy'
-              run: sfdx force:source:deploy -p "./force-app/main/default" -u MBDEVOPSRV
+              run: sfdx force:source:deploy -p "./force-app/main/default"
 
             # Assign permissionset
             - name: 'Assign permissionset to default user'
