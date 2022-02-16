@@ -6,7 +6,7 @@ on:
     workflow_dispatch:
     push:
         branches:
-            - fetaure1
+            - feature1
         paths-ignore:
             - 'sfdx-project.json'
             - 'README.md'
@@ -70,25 +70,34 @@ jobs:
                       echo "Missing DEVHUB_SFDX_URL secret. Is this workflow running on a fork?";
                       exit 1;
                   fi
+                  
+            # Store secret for review sandbox
+            - name: 'Populate auth file with DEVHUB_SANDBOX_REVIEW_URL secret'
+              shell: bash
+              run: |
+                  echo ${{ secrets.DEVHUB_SFDX_URL}} > ./DEVHUB_SANDBOX_REVIEW_URL.txt
+                  secretFileSize=$(wc -c "./DEVHUB_SANDBOX_REVIEW_URL.txt" | awk '{print $1}')
+                  if [ $secretFileSize == 1 ]; then
+                      echo "Missing DEVHUB_SANDBOX_REVIEW_URL secret. Is this workflow running on a fork?";
+                      exit 1;
+                  fi
+            
             # Authenticate dev hub
             - name: 'Authenticate Dev Hub'
               run: sfdx auth:sfdxurl:store -f ./DEVHUB_SFDX_URL.txt -a devhub -d
+              
+            # Authenticate sandbox review
+            - name: 'Authenticate Sandbox review'
+              run: sfdx auth:sfdxurl:store -f ./DEVHUB_SANDBOX_REVIEW_URL.txt -s MBDEVOPSRV
+
 
             # Create scratch org
-            - name: 'Create scratch org'
-              run: sfdx force:org:create -f config/project-scratch-def.json -a scratch-org -s -d 1
-
-            # Deploy source to scratch org
-            - name: 'Push source to scratch org'
-              run: sfdx force:source:push
+            - name: 'Deploy'
+              run: sfdx force:source:deploy -p "./force-app/main/default" -u MBDEVOPSRV
 
             # Assign permissionset
             - name: 'Assign permissionset to default user'
               run: sfdx force:user:permset:assign -n dreamhouse
-
-            # Import sample data
-            - name: 'Import sample data'
-              run: sfdx force:data:tree:import -p ./data/sample-data-plan.json
 
             # Run Apex tests in scratch org
             - name: 'Run Apex tests'
