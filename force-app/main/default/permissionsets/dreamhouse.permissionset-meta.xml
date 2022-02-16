@@ -274,6 +274,10 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
+        <tab>MB_test_app_deploy</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>Property_Explorer</tab>
         <visibility>Visible</visibility>
     </tabSettings>
