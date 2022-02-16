@@ -1,4 +1,4 @@
-#hello mike
+#hello mike from github
 # more useful commands
 #verbose org details
 sfdx force:org:list --verbose
