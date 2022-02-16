@@ -4,26 +4,6 @@
         <actionName>View</actionName>
         <comment
         >Action override created by Lightning App Builder during activation.</comment>
-        <content>Property_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>Property__c</pageOrSobjectType>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment
-        >Action override created by Lightning App Builder during activation.</comment>
-        <content>Property_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>Property__c</pageOrSobjectType>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment
-        >Action override created by Lightning App Builder during activation.</comment>
         <content>Broker_Record_Page</content>
         <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
@@ -39,6 +19,26 @@
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
         <pageOrSobjectType>Broker__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment
+        >Action override created by Lightning App Builder during activation.</comment>
+        <content>Property_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Property__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment
+        >Action override created by Lightning App Builder during activation.</comment>
+        <content>Property_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Property__c</pageOrSobjectType>
     </actionOverrides>
     <brand>
         <headerColor>#86BD4A</headerColor>
@@ -53,6 +53,7 @@
     <navType>Standard</navType>
     <setupExperience>all</setupExperience>
     <tabs>standard-home</tabs>
+    <tabs>MB_test_app_deploy</tabs>
     <tabs>Property_Explorer</tabs>
     <tabs>Property_Finder</tabs>
     <tabs>standard-Contact</tabs>
