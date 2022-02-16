@@ -1,10 +1,10 @@
 #Mikes script to set up the dreamhouselwc org
 
 # 1. delete scrtatch org
-sfdx force:org:delete -u dreamhouse
+sfdx force:org:delete -u dreamhousescratch
 
 #2. create scratch org
-sfdx shane:org:create --userprefix dhuser -o my.demo -s -d 30 -a dreamhouse
+sfdx shane:org:create --userprefix dhuser -o my.demo -s -d 30 -a dreamhousescratch
 
 #... and set the password
 sfdx shane:user:password:set -p sfdx1234 -g User -l User
