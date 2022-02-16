@@ -6,7 +6,7 @@ on:
     workflow_dispatch:
     push:
         branches:
-            - review
+            - feature1
         paths-ignore:
             - 'sfdx-project.json'
             - 'README.md'
@@ -71,14 +71,14 @@ jobs:
                       exit 1;
                   fi
 
-            # Store secret for integration sandbox
-            - name: 'Populate auth file with DEVHUB_SANDBOX_INTEGRATION_URL secret'
+            # Store secret for review sandbox
+            - name: 'Populate auth file with DEVHUB_SANDBOX_REVIEW_URL secret'
               shell: bash
               run: |
-                  echo ${{ secrets.DEVHUB_SANDBOX_INTEGRATION_URL}} > ./DEVHUB_SANDBOX_INTEGRATION_URL.txt
-                  secretFileSize=$(wc -c "./DEVHUB_SANDBOX_INTEGRATION_URL.txt" | awk '{print $1}')
+                  echo ${{ secrets.DEVHUB_SANDBOX_REVIEW_URL}} > ./DEVHUB_SANDBOX_REVIEW_URL.txt
+                  secretFileSize=$(wc -c "./DEVHUB_SANDBOX_REVIEW_URL.txt" | awk '{print $1}')
                   if [ $secretFileSize == 1 ]; then
-                      echo "Missing DEVHUB_SANDBOX_INTEGRATION_URL secret. Is this workflow running on a fork?";
+                      echo "Missing DEVHUB_SANDBOX_REVIEW_URL secret. Is this workflow running on a fork?";
                       exit 1;
                   fi
 
@@ -88,7 +88,7 @@ jobs:
 
             # Authenticate sandbox review
             - name: 'Authenticate Sandbox review'
-              run: sfdx auth:sfdxurl:store -f ./DEVHUB_SANDBOX_INTEGRATION_URL.txt -a MBDEVOPSIT -s
+              run: sfdx auth:sfdxurl:store -f ./DEVHUB_SANDBOX_REVIEW_URL.txt -a MBDEVOPSRV -s
 
             # Create scratch org
             - name: 'Deploy'
