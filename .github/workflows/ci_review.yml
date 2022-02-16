@@ -90,7 +90,6 @@ jobs:
             - name: 'Authenticate Sandbox review'
               run: sfdx auth:sfdxurl:store -f ./DEVHUB_SANDBOX_REVIEW_URL.txt -s MBDEVOPSRV
 
-
             # Create scratch org
             - name: 'Deploy'
               run: sfdx force:source:deploy -p "./force-app/main/default" -u MBDEVOPSRV
@@ -112,4 +111,3 @@ jobs:
               uses: codecov/codecov-action@v2.0.2
               with:
                   flags: Apex
-
