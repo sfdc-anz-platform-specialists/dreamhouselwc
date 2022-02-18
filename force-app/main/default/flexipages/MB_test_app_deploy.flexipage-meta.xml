@@ -3,6 +3,9 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <identifier>
+                    mbtestLWC
+                </identifier>
                 <componentName>mbtestLWC</componentName>
             </componentInstance>
         </itemInstances>

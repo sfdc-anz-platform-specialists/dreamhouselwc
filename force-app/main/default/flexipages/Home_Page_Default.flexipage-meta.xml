@@ -3,6 +3,7 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <identifier>111</identifier>
                 <componentName>home:heroChart</componentName>
             </componentInstance>
         </itemInstances>
@@ -13,11 +14,15 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <identifier>eventContainer</identifier>
+
                 <componentName>home:eventContainer</componentName>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
+                <identifier>recentRecordContainer</identifier>
+
                 <componentName>home:recentRecordContainer</componentName>
             </componentInstance>
         </itemInstances>
@@ -28,12 +33,14 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <identifier>todayTaskContainer</identifier>
                 <componentName
                 >runtime_sales_activities:todayTaskContainer</componentName>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
+                <identifier>222</identifier>
                 <componentName>home:topDealsContainer</componentName>
             </componentInstance>
         </itemInstances>
@@ -44,11 +51,13 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <identifier>333</identifier>
                 <componentName>flowruntime:pausedInterviewCard</componentName>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
+                <identifier>444</identifier>
                 <componentName>home:assistant</componentName>
             </componentInstance>
         </itemInstances>
