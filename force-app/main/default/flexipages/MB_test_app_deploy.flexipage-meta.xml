@@ -4,6 +4,7 @@
         <itemInstances>
             <componentInstance>
                 <componentName>mbtestLWC</componentName>
+                <identifier>mbtestLWC</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>
