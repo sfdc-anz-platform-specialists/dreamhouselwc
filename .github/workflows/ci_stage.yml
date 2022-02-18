@@ -92,7 +92,7 @@ jobs:
 
             # Create scratch org
             - name: 'Deploy'
-              run: sfdx force:source:deploy -p "./force-app/main/default"
+              run: sfdx force:source:deploy -p "./force-app/main/default" --apiversion="54.0"
 
             # Assign permissionset
             - name: 'Assign permissionset to default user'

@@ -3,7 +3,7 @@
     <fullName>Thumbnail_IMG__c</fullName>
     <externalId>false</externalId>
     <formula
-    >if(ISBLANK(Thumbnail__c), "", IMAGE(Thumbnail__c, "Picture", 200, 200))</formula>
+    >if(ISBLANK(Thumbnail__c), &quot;&quot;, IMAGE(Thumbnail__c, &quot;Picture&quot;, 200, 200))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Main Thumbnail</label>
     <required>false</required>
