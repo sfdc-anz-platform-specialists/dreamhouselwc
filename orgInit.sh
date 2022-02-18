@@ -1,10 +1,10 @@
 #Mikes script to set up the dreamhouselwc org
 
 # 1. delete scrtatch org
-sfdx force:org:delete -u dreamhousescratch
+sfdx force:org:delete -u dreamhouse
 
 #2. create scratch org
-sfdx shane:org:create --userprefix dhuser -o my.demo -s -d 30 -a dreamhousescratch
+sfdx shane:org:create --userprefix dhuser -o my.demo -s -d 30 -a dreamhouse
 
 #... and set the password
 sfdx shane:user:password:set -p sfdx1234 -g User -l User
@@ -23,10 +23,8 @@ sfdx force:data:tree:import -p data/sample-data-plan.json
 sfdx force:package:install -w 20 -r -p 04t1t000003DLAQAA4
 
 #7. install streaming channels and push topics
-sfdx force:apex:execute -f ./apex/setup.apex
-
-//sfdx force:user:create --setalias qa-user --definitionfile config/user-def.json
-//sfdx shane:user:password:set -p sfdx1234 -g QA -l Tester
+//sfdx force:apex:execute -f ./apex/setup.apsfdx force:user:create --setalias qa-user --definitionfile config/user-def.json
+//sfdx shane:user:password:set -p sfdx1234 -g Prop -l Manager
 
 #8. open the org
 sfdx force:org:open
