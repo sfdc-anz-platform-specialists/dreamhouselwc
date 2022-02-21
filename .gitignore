@@ -37,3 +37,5 @@ $RECYCLE.BIN/
 # VS Code project settings
 .vscode/*
 !.vscode/extensions.json
+
+tests/apex
