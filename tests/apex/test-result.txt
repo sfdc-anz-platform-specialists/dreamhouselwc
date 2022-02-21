@@ -1,27 +1,34 @@
 === Test Summary
-NAME                 VALUE                                 
-───────────────────  ──────────────────────────────────────
-Outcome              Passed                                
-Tests Ran            3                                     
-Pass Rate            100%                                  
-Fail Rate            0%                                    
-Skip Rate            0%                                    
-Test Run Id          7079D00000c8EKU                       
-Test Execution Time  62 ms                                 
-Org Id               00D9D0000001VS5UAM                    
-Username             mburnside@mbdevops2022.demo.mbdevopsst
-Org Wide Coverage    5%                                    
+NAME                 VALUE                      
+───────────────────  ───────────────────────────
+Outcome              Passed                     
+Tests Ran            7                          
+Pass Rate            100%                       
+Fail Rate            0%                         
+Skip Rate            0%                         
+Test Run Id          7075j00000ySAq5            
+Test Execution Time  1371 ms                    
+Org Id               00D5j000008wzRsEAI         
+Username             mburnside@mbdevops2022.demo
+Org Wide Coverage    17%                        
 
 
 === Test Results
-TEST NAME                             OUTCOME  MESSAGE  RUNTIME (MS)
-────────────────────────────────────  ───────  ───────  ────────────
-GeocodingServiceTest.blankAddress     Pass              37          
-GeocodingServiceTest.errorResponse    Pass              16          
-GeocodingServiceTest.successResponse  Pass              9           
+TEST NAME                                          OUTCOME  MESSAGE  RUNTIME (MS)
+─────────────────────────────────────────────────  ───────  ───────  ────────────
+GeocodingServiceTest.blankAddress                  Pass              19          
+GeocodingServiceTest.errorResponse                 Pass              12          
+GeocodingServiceTest.successResponse               Pass              7           
+TestPropertyController.testGetPagedPropertyList    Pass              178         
+TestPropertyController.testGetPicturesNoResults    Pass              107         
+TestPropertyController.testGetPicturesWithResults  Pass              594         
+TestSampleDataController.importSampleData          Pass              454         
 
 
 === Apex Code Coverage by Class
-CLASSES           PERCENT  UNCOVERED LINES
-────────────────  ───────  ───────────────
-GeocodingService  100%                    
+CLASSES               PERCENT  UNCOVERED LINES
+────────────────────  ───────  ───────────────
+PagedResult           100%                    
+GeocodingService      100%                    
+PropertyController    95%      26,31          
+SampleDataController  100%                    
