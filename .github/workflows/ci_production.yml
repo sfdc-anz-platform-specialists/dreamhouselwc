@@ -1,5 +1,5 @@
 # Unique name for this workflow
-name: CI-stage
+name: CI-production
 
 # Definition when the workflow should run
 on:
