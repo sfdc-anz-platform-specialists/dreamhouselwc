@@ -75,7 +75,7 @@ jobs:
             - name: 'Populate auth file with DEVHUB_PRODUCTION_URL secret'
               shell: bash
               run: |
-                  echo ${{ secrets.DEVHUB_SANDBOX_STAGING_URL}} > ./DEVHUB_PRODUCTION_URL.txt
+                  echo ${{ secrets.DEVHUB_PRODUCTION_URL}} > ./DEVHUB_PRODUCTION_URL.txt
                   secretFileSize=$(wc -c "./DEVHUB_PRODUCTION_URL.txt" | awk '{print $1}')
                   if [ $secretFileSize == 1 ]; then
                       echo "Missing DEVHUB_PRODUCTION_URL secret. Is this workflow running on a fork?";
@@ -88,7 +88,7 @@ jobs:
 
             # Authenticate sandbox review
             - name: 'Authenticate Sandbox review'
-              run: sfdx auth:sfdxurl:store -f ./DEVHUB_PRODUCTION_URL.txt -a MBDEVOPSST -s
+              run: sfdx auth:sfdxurl:store -f ./DEVHUB_PRODUCTION_URL.txt -a MBDEVOPS2022 -s
 
             # Create scratch org
             - name: 'Deploy'
