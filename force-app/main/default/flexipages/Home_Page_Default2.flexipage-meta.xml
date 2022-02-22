@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <flexiPageRegions>
-  
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>additionalFilter</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>allDayField</name>
+                    <value>IsAllDayEvent</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>aspectRatio</name>
+                    <value>1.35</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>colorField</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>dayView</name>
+                    <value>timeGridDay</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>endField</name>
+                    <value>EndDateTime</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>650</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>listView</name>
+                    <value>listMonth</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>objectName</name>
+                    <value>Event</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>startField</name>
+                    <value>StartDateTime</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleField</name>
+                    <value>Subject</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>weekView</name>
+                    <value>timeGridWeek</value>
+                </componentInstanceProperties>
+                <componentName>fullCalendar</componentName>
+                <identifier>c_fullCalendar1</identifier>
+            </componentInstance>
+        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentName>home:heroChart</componentName>
