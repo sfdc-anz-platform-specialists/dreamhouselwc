@@ -48,12 +48,7 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentName>fullCalendarJs</componentName>
-                <identifier>c_fullCalendarJs1</identifier>
-            </componentInstance>
-        </itemInstances>
+        
         <itemInstances>
             <componentInstance>
                 <componentName>home:assistant</componentName>
