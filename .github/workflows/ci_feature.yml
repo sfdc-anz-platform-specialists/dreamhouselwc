@@ -1,4 +1,4 @@
-# Unique name for this workflow
+# A Unique name for this workflow
 name: CI-feature
 
 # Definition when the workflow should run
