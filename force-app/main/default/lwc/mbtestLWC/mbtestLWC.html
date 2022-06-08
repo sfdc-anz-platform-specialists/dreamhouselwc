@@ -1,6 +1,14 @@
 <template>
     <lightning-card>
-        Hello this LWC started life in a scratch org. It doesn't do much at all.
-        Hello world!
+        Hello there, this LWC started life in a scratch org. It doesn't do much
+        at all. Hello world!
+        <c-logger></c-logger>
+        <lightning-button
+            variant="brand"
+            label="Brand"
+            title="Primary action"
+            onclick={handleClick}
+            class="slds-m-left_x-small"
+        ></lightning-button>
     </lightning-card>
 </template>
