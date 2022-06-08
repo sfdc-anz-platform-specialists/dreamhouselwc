@@ -94,10 +94,6 @@ jobs:
             - name: 'Deploy'
               run: sfdx force:source:deploy -p "./force-app/main/default" --apiversion="54.0"
 
-            # Assign permissionset
-            - name: 'Assign permissionset to default user'
-              run: sfdx force:user:permset:assign -n dreamhouse
-
             # Run Apex tests in scratch org
             - name: 'Run Apex tests'
               run: sfdx force:apex:test:run -n "GeocodingServiceTest,TestPropertyController,TestSampleDataController" -c -r human -d ./tests/apex -w 20
